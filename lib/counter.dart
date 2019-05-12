@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
 class Counter with ChangeNotifier {
-  int _counter;
+  int _value;
 
-  Counter(this._counter);
+  Counter(this._value);
 
-  int get counter => this._counter;
+  int get value => this._value;
 
   increment() {
-    _counter++;
+    _value++;
     notifyListeners();
   }
 
   decrement() {
-    _counter--;
+    _value--;
     notifyListeners();
   }
 }
